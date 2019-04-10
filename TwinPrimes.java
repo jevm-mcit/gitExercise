@@ -27,11 +27,10 @@ public class TwinPrimes {
 				// print something else to flag a prime
 				output[i-1] = '-';  //Standard prime
 				if (i - lastPrime == 2) {
-					output[i-1] = '+';
-					output[i-3] = '+';
-				}
-				lastPrime = i;
-			}
+
+					output[i-1] = '*';
+					output[i-3] = '*';
+
 		}
 		// Print characters, every newLine skip a line
 		for (int i=0; i <= numbersToScan-1; i++) {
