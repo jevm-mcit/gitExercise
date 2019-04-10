@@ -16,23 +16,23 @@ public class TwinPrimes {
 			// This loop will go through every positive integer
 			int testFactor = 2;
 			while ( (i % testFactor != 0) && (testFactor <= i) ) {
-				// This loop tests if testFactor is a factor of i 
+				// This loop tests if testFactor is a factor of i
 				testFactor++;
 			}
 			if ( (testFactor < i) || (i == 1)) {
 				// print something when i is not prime (has a factor > 1 and <i)
 				output[i-1] = '_';  //array first index is 0 for integer number 1
-			} 
+			}
 			else {
 				// print something else to flag a prime
-				output[i-1] = '-';  //Standard prime 
+				output[i-1] = '-';  //Standard prime
 				if (i - lastPrime == 2) {
-					output[i-1] = ']';
-					output[i-3] = '[';
+					output[i-1] = '+';
+					output[i-3] = '+';
 				}
-				lastPrime = i;  
-			} 
-		}			
+				lastPrime = i;
+			}
+		}
 		// Print characters, every newLine skip a line
 		for (int i=0; i <= numbersToScan-1; i++) {
 			if ( (i >= 1) && (i % newLine == 0) ) {
