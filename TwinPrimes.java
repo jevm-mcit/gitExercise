@@ -27,8 +27,8 @@ public class TwinPrimes {
 				// print something else to flag a prime
 				output[i-1] = '-';  //Standard prime 
 				if (i - lastPrime == 2) {
-					output[i-1] = ']';
-					output[i-3] = '[';
+					output[i-1] = '*';
+					output[i-3] = '*';
 				}
 				lastPrime = i;  
 			} 
